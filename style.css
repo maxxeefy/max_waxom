@@ -1,6 +1,47 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@font-face {
+    font-family: raleway-bold;
+    src: url(fonts/raleway/raleway-bold.ttf);
+}
+
+@font-face {
+    font-family: raleway-extrabold;
+    src: url(fonts/raleway/raleway-extrabold.ttf);
+}
+
+@font-face {
+    font-family: raleway-medium;
+    src: url(fonts/raleway/raleway-medium.ttf);
+}
+
+@font-face {
+    font-family: raleway-regular;
+    src: url(fonts/raleway/raleway-regular.ttf);
+}
+
+@font-face {
+    font-family: raleway-semibold;
+    src: url(fonts/raleway/raleway-semibold.ttf);
+}
+
+@font-face {
+    font-family: montserrat-extralight;
+    src: url(fonts/montserrat/montserrat-extralight.ttf);
+}
+
+@font-face {
+    font-family: montserrat-light;
+    src: url(fonts/montserrat/montserrat-light.ttf);
+}
+
+@font-face {
+    font-family: montserrat-regular;
+    src: url(fonts/montserrat/montserrat-regular.ttf);
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: url(fonts/roboto/roboto-regular.ttf);
+}
 
 * {
     margin: 0;
@@ -13,9 +54,11 @@
 }
 
 .header {
+    width: 1920px;
     background: url(img/photo.jpg) no-repeat 0 0;
     padding-top: 40px;
     padding-bottom: 342px;
+    position: relative;
 }
 
 .header-nav {
@@ -29,10 +72,9 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-    font-family: Raleway;
+    font-family: 'raleway-regular', 'Arial', sans-serif;
     color: #ffffff;
     font-size: 34px;
-    font-weight: 400;
     float: left;
     fill: #ffffff;
 }
@@ -49,10 +91,9 @@
 .header-nav li a {
     text-decoration: none;
     margin-left: 30px;
-    font-family: Montserrat;
+    font-family: 'montserrat-light', 'Arial', sans-serif;
     color: #ffffff;
     font-size: 14px;
-    font-weight: 300;
 }
 
 .header-nav li a:hover {
@@ -64,12 +105,18 @@
     fill: #ffffff;
 }
 
+.cart:hover {
+    fill: #c7b29a;
+}
+
 .search {
     fill: #ffffff;
 }
 
-.left,
-.right {}
+.search:hover {
+    fill: #c7b29a;
+}
+
 
 .header-slider {
     display: flex;
@@ -89,7 +136,7 @@
 }
 
 .right:hover,
-.left:hover  {
+.left:hover {
     border-top: 2px solid orange;
     border-right: 2px solid orange;
 }
@@ -108,44 +155,68 @@
 .text {
     text-align: center;
     width: 600px;
-    font-family: Raleway;
     color: #ffffff;
     margin: 285px 410px 0 410px;
 }
 
 .text h3 {
+    font-family: 'raleway-regular', 'Arial', sans-serif;
     font-size: 36px;
-    font-weight: 500;
     margin-bottom: 14px;
 }
 
 .text h1 {
+    font-family: 'raleway-extrabold', 'Arial', sans-serif;
     font-size: 52px;
-    font-weight: 700;
     margin-bottom: 19px;
 }
 
 .text p {
-    width: 550px;
+    font-family: 'montserrat-light', 'Arial', sans-serif;
+    width: 570px;
     font-size: 16px;
-    font-weight: 300;
     line-height: 24px;
     margin-bottom: 52px;
 }
 
 .text a {
     display: block;
+    font-family: 'raleway-extrabold', 'Arial', sans-serif;
     width: 170px;
     height: 53px;
     margin: 0 auto;
     border-radius: 3px;
+    border: 1px solid #998675;
     background-color: #998675;
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
     font-size: 14px;
-    font-weight: 700;
     line-height: 53px;
+}
+
+.text a:hover {
+    background-color: #ffffff;
+    color: #998675;
+}
+
+.slider-circle {
+    position: absolute;
+    left: 920px;
+    bottom: 42px;
+}
+
+.slider-circle svg {
+    margin-right: 9px;
+    fill: white;
+    opacity: 0.5;
+}
+
+.slider-circle svg:nth-of-type(2) {
+    stroke: #d3c1ad;
+    stroke-width: 2px;
+    fill: none;
+    opacity: 1;
 }
 
 .services_catalog {
@@ -167,19 +238,17 @@
 
 .services_catalog h4 {
     width: 270px;
-    font-family: Raleway;
+    font-family: 'raleway-semibold', 'Arial', sans-serif;
     color: #555555;
     font-size: 22px;
-    font-weight: 600;
     margin-bottom: 19px;
 }
 
 .services_catalog p {
     width: 270px;
-    font-family: Montserrat;
+    font-family: 'montserrat-light', 'Arial', sans-serif;
     color: #8c8c8c;
     font-size: 14px;
-    font-weight: 300;
     line-height: 24px;
     margin-bottom: 30px;
 }
@@ -220,17 +289,15 @@
 
 .waxom_ideas h3 {
     margin-bottom: 24px;
-    font-family: Raleway;
+    font-family: 'raleway-semibold', 'Arial', sans-serif;
     color: #555555;
     font-size: 30px;
-    font-weight: 600;
 }
 
 .waxom_ideas p {
-    font-family: Montserrat;
+    font-family: 'montserrat-light', 'Arial', sans-serif;
     color: #8c8c8c;
     font-size: 16px;
-    font-weight: 300;
     line-height: 28px;
     width: 780px;
     margin: 0 auto;
@@ -281,10 +348,9 @@
 }
 
 .waxom_wordpress_text h3 {
-    font-family: Raleway;
+    font-family: 'raleway-regular', 'Arial', sans-serif;
     color: #ffffff;
     font-size: 28px;
-    font-weight: 400;
 }
 
 .waxom_wordpress_text span {
@@ -292,10 +358,9 @@
 }
 
 .waxom_wordpress_text p {
-    font-family: Montserrat;
+    font-family: 'montserrat-light', 'Arial', sans-serif;
     color: #615855;
     font-size: 18px;
-    font-weight: 300;
     margin-right: 500px;
 }
 
@@ -306,13 +371,18 @@
     width: 170px;
     height: 50px;
     border-radius: 3px;
+    border: 1px solid #998675;
     background-color: #998675;
-    font-family: Raleway;
+    font-family: 'raleway-extrabold', 'Arial', sans-serif;
     color: #ffffff;
     font-size: 14px;
-    font-weight: 700;
     line-height: 50px;
     text-align: center;
+}
+
+.waxom_wordpress a:hover {
+    color: #998675;
+    background-color: #ffffff;
 }
 
 .waxom_projects {
@@ -323,17 +393,15 @@
 
 .waxom_projects h3 {
     margin-bottom: 24px;
-    font-family: Raleway;
+    font-family: 'raleway-semibold', 'Arial', sans-serif;
     color: #555555;
     font-size: 30px;
-    font-weight: 600;
 }
 
 .waxom_projects p {
-    font-family: Montserrat;
+    font-family: 'montserrat-light', 'Arial', sans-serif;
     color: #8c8c8c;
     font-size: 16px;
-    font-weight: 300;
     line-height: 28px;
     width: 780px;
     margin: 0 auto 40px auto;
@@ -351,10 +419,9 @@
     border-radius: 3px;
     border: 1px solid #ebebeb;
     background-color: #ffffff;
-    font-family: Montserrat;
+    font-family: 'montserrat-light', 'Arial', sans-serif;
     color: #8c8c8c;
     font-size: 14px;
-    font-weight: 300;
     line-height: 21px;
     text-align: center;
     margin-right: 10px;
@@ -378,7 +445,6 @@
     margin-right: 30px;
     margin-bottom: 30px;
     background: #fbfaf8;
-    text-decoration: none;
     position: relative;
 }
 
@@ -391,7 +457,7 @@
 .waxom_project_text::after {
     content: "";
     display: block;
-    border: 20px solid transparent;	
+    border: 20px solid transparent;
     border-bottom: 10px solid #fbfaf8;
     position: absolute;
     top: -63px;
@@ -399,20 +465,18 @@
 }
 
 .waxom_project_text h4 {
-    font-family: Raleway;
+    font-family: 'raleway-semibold', 'Arial', sans-serif;
     color: #c7b29a;
     font-size: 20px;
-    font-weight: 500;
     margin-top: 30px;
     margin-left: 30px;
     margin-bottom: 14px;
 }
 
 .waxom_project_text p {
-    font-family: Montserrat;
+    font-family: 'montserrat-light', 'Arial', sans-serif;
     color: #d1d1d1;
     font-size: 14px;
-    font-weight: 300;
     line-height: 20px;
     margin-left: 30px;
 }
@@ -442,8 +506,12 @@
     position: absolute;
     top: 106px;
     left: 144px;
-    fill: #c7b299;
+    fill: #ffffff;
     visibility: hidden;
+}
+
+.waxom_projects_link:hover {
+    fill: #c7b299;
 }
 
 .product:hover .waxom_projects_link {
@@ -459,7 +527,11 @@
     visibility: hidden;
 }
 
-.product:hover .waxom_projects_lupa  {
+.waxom_projects_lupa:hover {
+    fill: #c7b299;
+}
+
+.product:hover .waxom_projects_lupa {
     visibility: visible;
 }
 
@@ -471,10 +543,10 @@
     height: 50px;
     border-radius: 3px;
     background-color: #998675;
-    font-family: Raleway;
+    border: 1px solid #998675;
+    font-family: 'raleway-extrabold', 'Arial', sans-serif;
     color: #ffffff;
     font-size: 14px;
-    font-weight: 700;
     line-height: 50px;
     text-align: center;
     margin: 0 auto;
@@ -482,36 +554,57 @@
     margin-bottom: 80px;
 }
 
+.waxom_projects_more:hover {
+    color: #998675;
+    background-color: #ffffff;
+}
+
 .waxom_video {
     position: relative;
     text-align: center;
-    padding-top: 354px;
+    padding-top: 195px;
     padding-bottom: 168px;
+}
+
+.waxom_video svg {
+    fill: #ffffff;
+    margin-top: 15px;
+}
+
+.waxom_video_svg {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color:  rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    margin-bottom: 44px;
+}
+
+.waxom_video_svg:active {
+    visibility: hidden;
 }
 
 .waxom_video h3 {
     margin-bottom: 29px;
-    font-family: Raleway;
+    font-family: 'raleway-medium', 'Arial', sans-serif;
     color: #ffffff;
     font-size: 30px;
-    font-weight: 500;
 }
 
 .waxom_video p {
-    font-family: Montserrat;
+    font-family: 'montserrat-light', 'Arial', sans-serif;
     color: #ffffff;
     font-size: 16px;
-    font-weight: 300;
     line-height: 28px;
     width: 780px;
     margin: 0 auto 40px auto;
 }
 
 .waxom_video span {
-    font-family: Montserrat;
+    font-family: 'montserrat-regular', 'Arial', sans-serif;
     color: #c7b299;
     font-size: 14px;
-    font-weight: 400;
     line-height: 24px;
     margin: 0 auto;
 }
@@ -535,19 +628,17 @@ video {
 
 .waxom_mobile h3 {
     margin: 116px 0 40px 454px;
-    font-family: Raleway;
+    font-family: 'raleway-semibold', 'Arial', sans-serif;
     color: #555555;
     font-size: 30px;
-    font-weight: 600;
 }
 
 .waxom_mobile p {
     width: 670px;
     margin: 0 0 45px 454px;
-    font-family: Montserrat;
+    font-family: 'montserrat-light', 'Arial', sans-serif;
     color: #8c8c8c;
     font-size: 16px;
-    font-weight: 300;
     line-height: 28px;
 }
 
@@ -558,15 +649,15 @@ video {
 
 .waxom_mobile li {
     padding-left: 50px;
-    font-family: Montserrat;
+    font-family: 'montserrat-light', 'Arial', sans-serif;
     color: #8c8c8c;
     font-size: 16px;
-    font-weight: 300;
     line-height: 32px;
     background: url(img/list_mark.png) no-repeat 0 5px;
 }
 
 .waxom_statistics {
+    width: 1920px;
     background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
     background: -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
     background: -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
@@ -588,19 +679,17 @@ video {
 }
 
 .waxom_stat h2 {
-    font-family: Montserrat;
+    font-family: 'montserrat-extralight', 'Arial', sans-serif;
     color: #ffffff;
     font-size: 48px;
-    font-weight: 200;
     line-height: 36px;
     margin-bottom: 20px;
 }
 
 .waxom_stat p {
-    font-family: Montserrat;
+    font-family: 'montserrat-light', 'Arial', sans-serif;
     color: #c7b299;
     font-size: 14px;
-    font-weight: 300;
     line-height: 20px;
     text-transform: uppercase;
     margin-bottom: 30px;
@@ -624,20 +713,18 @@ video {
 }
 
 .waxom_posts_text h3 {
-    font-family: Raleway;
+    font-family: 'raleway-semibold', 'Arial', sans-serif;
     color: #555555;
     font-size: 30px;
-    font-weight: 600;
     margin-bottom: 30px;
 }
 
 .waxom_posts_text p {
     width: 780px;
     margin: 0 auto;
-    font-family: Montserrat;
+    font-family: 'montserrat-light', 'Arial', sans-serif;
     color: #8c8c8c;
     font-size: 16px;
-    font-weight: 300;
     line-height: 28px;
     margin-bottom: 40px;
 }
@@ -664,31 +751,40 @@ video {
 }
 
 .waxom_posts_headline {
-    font-family: Raleway;
+    font-family: 'raleway-medium', 'Arial', sans-serif;
     color: #555555;
     font-size: 20px;
-    font-weight: 500;
     margin: 30px 0 20px 30px;
 }
 
 .waxom_posts_paragraph {
     width: 320px;
-    font-family: Montserrat;
+    font-family: 'montserrat-light', 'Arial', sans-serif;
     color: #8c8c8c;
     font-size: 14px;
-    font-weight: 300;
     line-height: 22px;
     margin: 0 0 20px 30px;
 }
 
 .waxom_posts_more {
-    font-family: Montserrat;
+    font-family: 'montserrat-light', 'Arial', sans-serif;
     color: #c7b299;
     font-size: 14px;
     font-weight: 300;
     line-height: 20px;
     margin-left: 30px;
     margin-bottom: 35px;
+    position: relative;
+}
+
+.waxom_posts_more::after {
+    content: "";
+    display: block;
+    border: 5px solid transparent;
+    border-left: 8px solid #c7b299;
+    position: absolute;
+    top: 5px;
+    left: 87px;
 }
 
 .waxom_posts_calendar {
@@ -703,10 +799,9 @@ video {
 .waxom_posts_calendar span:first-of-type {
     display: block;
     padding: 10px;
-    font-family: Montserrat;
+    font-family: 'montserrat-light', 'Arial', sans-serif;
     color: #ffffff;
     font-size: 24px;
-    font-weight: 300;
     line-height: 20px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -716,10 +811,9 @@ video {
 .waxom_posts_calendar span:last-of-type {
     display: block;
     padding: 10px;
-    font-family: Roboto;
+    font-family: 'roboto-regular', 'Arial', sans-serif;
     color: #ffffff;
     font-size: 12px;
-    font-weight: 400;
     line-height: 20px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
@@ -779,7 +873,7 @@ video {
 }
 
 .waxom_logos {
-    padding: 140px 0;
+    padding: 135px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -790,4 +884,232 @@ video {
     display: block;
     text-decoration: none;
     margin-right: 90px;
+}
+
+.waxom_community {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background: #121212;
+    padding: 80px 0;
+}
+
+.waxom_community_discr {
+    width: 270px;
+    text-align: left;
+    margin-right: 40px;
+}
+
+.waxom_community_logo {
+    width: 190px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: 'raleway-regular', 'Arial', sans-serif;
+    color: #ffffff;
+    font-size: 34px;
+    fill: #ffffff;
+    margin-bottom: 30px;
+}
+
+.waxom_community_discr p {
+    font-family: 'montserrat-light', 'Arial', sans-serif;
+    color: #545454;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.waxom_community_rm {
+    text-decoration: none;
+    font-family: 'montserrat-regular', 'Arial', sans-serif;
+    color: #d1d1d1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    position: relative;
+}
+
+.waxom_community_rm:hover {
+    color: #c7b299;
+}
+
+.waxom_community_rm:hover::after {
+    border-left: 8px solid #c7b299;
+}
+
+.waxom_community_rm::after {
+    content: "";
+    display: block;
+    border: 5px solid transparent;
+    border-left: 8px solid #d1d1d1;
+    position: absolute;
+    top: 4px;
+    left: 87px;
+}
+
+.waxom_community h3 {
+    font-family: 'raleway-bold', 'Arial', sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.waxom_community_posts {
+    width: 270px;
+    text-align: left;
+    margin-right: 40px;
+}
+
+.waxom_community_posts a {
+    display: block;
+    text-decoration: none;
+}
+
+.waxom_community_posts h5 {
+    font-family: 'montserrat-light', 'Arial', sans-serif;
+    color: #363636;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.waxom_community_posts p {
+    font-family: 'montserrat-light', 'Arial', sans-serif;
+    color: #545454;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.waxom_recent_paragraph_f,
+.waxom_recent_paragraph_s {
+    border-bottom: 2px solid #252525;
+    margin-bottom: 20px;
+}
+
+.waxom_community_posts a:hover h5 {
+    color: #ffffff;
+}
+
+.waxom_community_posts a:hover p {
+    color: #c7b299;
+}
+
+.waxom_community_twitter {
+    width: 270px;
+    text-align: left;
+    margin-right: 40px;
+}
+
+.waxom_community_twitter p {
+    font-family: 'montserrat-light', 'Arial', sans-serif;
+    color: #545454;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.twitter_link {
+    text-decoration: none;
+    color: #00bff3;
+}
+
+.how_long {
+    display: block;
+    font-family: 'montserrat-light', 'Arial', sans-serif;
+    color: #363636;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.waxom_twitter_paragraph_f,
+.waxom_twitter_paragraph_s {
+    border-bottom: 2px solid #252525;
+    margin-bottom: 20px;
+}
+
+.waxom_community_widget_catalog {
+    width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.waxom_community_widget_catalog a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    padding: 45px 0 50px 0;
+    background: #090909;
+}
+
+.footer_text {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_text_left p {
+    float: left;
+    font-family: 'montserrat-light', 'Arial', sans-serif;
+    color: #545454;
+    font-size: 13px;
+    line-height: 20px;
+    padding-right: 10px;
+    border-right: 1px solid #242424;
+}
+
+.footer_text_left span {
+    color: #959595;
+}
+
+.footer_text_left a:nth-of-type(1),
+.footer_text_left a:nth-of-type(2) {
+    padding: 0 10px;
+    border-right: 1px solid #242424;
+}
+
+.footer_text_left a:nth-of-type(3) {
+    padding-left: 10px;
+    margin-right: 490px;
+}
+
+.footer_text a:hover {
+    color: #c7b299;
+}
+
+.footer_text_left a {
+    display: block;
+    float: left;
+    text-decoration: none;
+    font-family: 'montserrat-light', 'Arial', sans-serif;
+    color: #545454;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.footer_text_right p {
+    float: left;
+    font-family: 'montserrat-light', 'Arial', sans-serif;
+    color: #545454;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.footer_text_right p:first-of-type {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #242424;
+}
+
+.footer_text_right a {
+    text-decoration: none;
+    text-decoration: none;
+    font-family: 'montserrat-light', 'Arial', sans-serif;
+    color: #959595;
+    font-size: 13px;
+    line-height: 20px;
 }
