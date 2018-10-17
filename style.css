@@ -1137,40 +1137,73 @@ input[type="checkbox"]:checked~.menu {
 
     .header {
         width: 100%;
+        padding-bottom: 50px;
     }
 
     .header-nav {
-        flex-direction: column;
-        margin-left: 50px;
+        margin-left: 60px;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     label {
         display: block;
         position: absolute;
-        top: 55px;
+        top: 60px;
         left: 10px;
     }
 
     .menu {
         visibility: hidden;
-        margin: 0 auto;
+        margin-left: 0px;
         height: auto;
-        width: 380px;
+        width: 300px;
         flex-direction: column;
         position: absolute;
-        top: 100px;
+        top: 130px;
+        padding-top: 5px;
     }
 
     .menu li {
         height: 40px;
         text-align: center;
-        background-color: #ccc;
-        margin-top: 2px;
+        background-color: #d3c1ad;
+        margin: 3px;
     }
 
     .menu li a {
-        /* border: 1px solid green; */
-        width: 100%;
+        margin-left: 0px;
+        line-height: 40px;
     }
 
+    .header-logo {
+        flex-direction: column;
+    }
+
+    .text {
+        margin: 70px 0 0 0;
+        width: 80%;
+    }
+
+    .text p {
+        width: 100%;
+    }
+    
+    .right {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        
+    }
+    
+    .left {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+
+    .slider-circle {
+        left: 40%;
+        bottom: 15px;
+    }
 }
