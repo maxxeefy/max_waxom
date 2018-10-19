@@ -199,13 +199,15 @@
 }
 
 .slider-circle {
-    margin: 221px 0 0px 909px;
+    margin: 221px auto 0px auto;
+    width: 120px;
 }
 
 .slider-circle svg {
     margin-right: 9px;
     fill: white;
     opacity: 0.5;
+    
 }
 
 .slider-circle svg:nth-of-type(2) {
@@ -500,8 +502,8 @@
 .waxom_projects_link {
     display: block;
     position: absolute;
-    top: 106px;
-    left: 144px;
+    top: 30%;
+    left: 35%;
     fill: #ffffff;
     visibility: hidden;
 }
@@ -517,8 +519,8 @@
 .waxom_projects_lupa {
     display: block;
     position: absolute;
-    top: 106px;
-    left: 198px;
+    top: 30%;
+    left: 55%;
     fill: #ffffff;
     visibility: hidden;
 }
@@ -739,7 +741,9 @@ video {
 }
 
 .waxom_posts_catalog a {
+    display: block;
     text-decoration: none;
+    margin-bottom: 30px;
 }
 
 .waxom_catalog_text {
@@ -1127,9 +1131,10 @@ input[type="checkbox"]:checked~.menu {
     visibility: visible;
 }
 
-@media (max-width: 575.98px) {
+@media screen and (max-width: 575.98px) {
     .container {
         width: 100%;
+        overflow: none;
     }
 
     .header {
@@ -1200,10 +1205,12 @@ input[type="checkbox"]:checked~.menu {
     }
 
     .slider-circle {
-        margin: 221px 0 0 40%;
+        width: 120px;
+        margin: 60% auto 0 auto;
     }
 
     .services_catalog {
+        width: 100%;
         flex-direction: column;
         padding: 20px 0;
     }
@@ -1213,6 +1220,7 @@ input[type="checkbox"]:checked~.menu {
     }
 
     .waxom_ideas {
+        width: 100%;
         padding-top: 20px;
         padding-bottom: 250px;
     }
@@ -1244,6 +1252,7 @@ input[type="checkbox"]:checked~.menu {
     }
 
     .waxom_wordpress {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1267,6 +1276,7 @@ input[type="checkbox"]:checked~.menu {
     }
 
     .waxom_projects {
+        width: 100%;
         padding-top: 40px;
     }
 
@@ -1297,8 +1307,13 @@ input[type="checkbox"]:checked~.menu {
     }
 
     .product {
-        width: 370px;
+        width: 90%;
         margin: 0 auto 30px auto;
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
     }
 
     .waxom_project_text {
@@ -1311,6 +1326,7 @@ input[type="checkbox"]:checked~.menu {
     }
 
     .waxom_video {
+        width: 100%;
         padding-top: 20px;
         padding-bottom: 20px;
         background-color: #332926;
@@ -1354,6 +1370,7 @@ input[type="checkbox"]:checked~.menu {
     }
 
     .waxom_mobile {
+        width: 100%;
         padding: 20px 0;
         background: #fbfaf8;
     }
@@ -1390,6 +1407,7 @@ input[type="checkbox"]:checked~.menu {
     }
 
     .waxom_posts {
+        width: 100%;
         padding: 30px 0;
     }
 
@@ -1415,21 +1433,41 @@ input[type="checkbox"]:checked~.menu {
         margin: 20px auto 30px auto;
     }
 
-    .waxom_logos {
-        padding: 0;
-        flex-wrap: wrap;
+    .waxom_posts_post {
+        display: block;
+        margin-right: 30px;
+        width: 80%;
+        position: relative;
+        margin-bottom: 40px;
     }
+
+    .waxom_posts_post img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .waxom_posts_paragraph {
+        width: 100%;
+    }
+    
+    .waxom_logos {
+        width: 100%;
+        padding: 0;
+
+    }
+
 
     .waxom_logos a {
         margin: 20px auto;
     }
 
     .waxom_logos img {
-        width: 140px;
+        width: 90%;
         height: auto;
     }
 
     .waxom_community {
+        width: 100%;
         padding: 30px 0;
         flex-wrap: wrap;
     }
@@ -1451,6 +1489,7 @@ input[type="checkbox"]:checked~.menu {
     }
 
     .footer {
+        width: 100%;
         padding: 20px 0;
         background: #090909;
     }
