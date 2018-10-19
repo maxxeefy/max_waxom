@@ -1185,14 +1185,14 @@ input[type="checkbox"]:checked~.menu {
     .text p {
         width: 100%;
     }
-    
+
     .right {
         position: absolute;
         top: 20px;
         right: 30px;
-        
+
     }
-    
+
     .left {
         position: absolute;
         top: 20px;
@@ -1216,29 +1216,29 @@ input[type="checkbox"]:checked~.menu {
         padding-top: 20px;
         padding-bottom: 250px;
     }
-    
+
     .waxom_ideas h3 {
         width: 80%;
         margin: 24px auto;
     }
-    
+
     .waxom_ideas p {
         width: 80%;
     }
-    
+
     .waxom_ideas img {
         width: 70%;
     }
-    
+
     .waxom_ideas_img_center {
         z-index: 2;
         left: 15%;
     }
-    
+
     .waxom_ideas_img_left {
         left: 10px;
     }
-    
+
     .waxom_ideas_img_right {
         right: 10px;
     }
@@ -1256,7 +1256,7 @@ input[type="checkbox"]:checked~.menu {
         margin: 0 auto;
         text-align: center;
     }
-    
+
     .waxom_wordpress_text h3 {
         margin-bottom: 10px;
     }
@@ -1269,18 +1269,18 @@ input[type="checkbox"]:checked~.menu {
     .waxom_projects {
         padding-top: 40px;
     }
-    
+
     .waxom_projects h3 {
         width: 80%;
         margin: 0 auto;
     }
-    
+
     .waxom_projects p {
         width: 80%;
         margin: 20px auto;
         text-align: center;
     }
-    
+
     .waxom_projects_catalog_link {
         flex-wrap: wrap;
     }
@@ -1295,7 +1295,7 @@ input[type="checkbox"]:checked~.menu {
         width: 80%;
         margin: 0 auto;
     }
-    
+
     .product {
         width: 370px;
         margin: 0 auto 30px auto;
@@ -1304,7 +1304,7 @@ input[type="checkbox"]:checked~.menu {
     .waxom_project_text {
         width: 100%;
     }
-    
+
     .waxom_project_text p {
         margin-left: 30px;
         text-align: left;
@@ -1315,36 +1315,36 @@ input[type="checkbox"]:checked~.menu {
         padding-bottom: 20px;
         background-color: #332926;
     }
-    
+
     .waxom_video svg {
         margin-top: 15px;
     }
-    
+
     .waxom_video_svg {
         margin-bottom: 20px;
         z-index: 2;
         position: relative;
     }
-    
+
     .waxom_video h3 {
         margin: 20px auto;
         z-index: 2;
         position: relative;
     }
-    
+
     .waxom_video p {
         width: 90%;
         margin: 30px auto;
         z-index: 2;
         position: relative;
     }
-    
+
     .waxom_video span {
         margin: 0 auto;
         z-index: 2;
         position: relative;
     }
-    
+
     video {
         width: 100%;
         height: auto;
@@ -1357,34 +1357,34 @@ input[type="checkbox"]:checked~.menu {
         padding: 20px 0;
         background: #fbfaf8;
     }
-    
+
     .waxom_mobile img {
         display: block;
         width: 50%;
         float: none;
         margin: 0 auto;
     }
-    
+
     .waxom_mobile h3 {
         width: 80%;
         margin: 20px auto;
     }
-    
+
     .waxom_mobile p {
         width: 80%;
         margin: 20px auto;
     }
-    
+
     .waxom_mobile ul {
         width: 80%;
         margin: 0 auto;
     }
-    
+
     .waxom_statistics {
         width: 100%;
         flex-wrap: wrap;
     }
-    
+
     .waxom_stat {
         margin: 30px auto;
     }
@@ -1392,34 +1392,34 @@ input[type="checkbox"]:checked~.menu {
     .waxom_posts {
         padding: 30px 0;
     }
-    
+
     .waxom_posts_text {
         text-align: center;
     }
-    
+
     .waxom_posts_text h3 {
         width: 80%;
         margin: 20px auto;
     }
-    
+
     .waxom_posts_text p {
         width: 80%;
         margin: 20px auto;
     }
-    
+
     .waxom_posts_catalog {
         flex-wrap: wrap;
     }
-    
+
     .waxom_posts_post {
         margin: 20px auto 30px auto;
     }
-    
+
     .waxom_logos {
         padding: 0;
         flex-wrap: wrap;
     }
-    
+
     .waxom_logos a {
         margin: 20px auto;
     }
@@ -1433,19 +1433,19 @@ input[type="checkbox"]:checked~.menu {
         padding: 30px 0;
         flex-wrap: wrap;
     }
-    
+
     .waxom_community_discr {
         margin: 20px auto;
     }
-    
+
     .waxom_community_posts {
         margin: 20px auto;
     }
-      
+
     .waxom_community_twitter {
         margin: 20px auto;
     }
-            
+
     .waxom_community_widget_catalog {
         margin: 20px auto;
     }
@@ -1454,17 +1454,17 @@ input[type="checkbox"]:checked~.menu {
         padding: 20px 0;
         background: #090909;
     }
-    
+
     .footer_text {
         flex-direction: column;
         margin: 0px auto;
     }
-        
+
     .footer_text_left a:nth-of-type(1),
     .footer_text_left a:nth-of-type(2) {
         padding: 0 10px;
     }
-    
+
     .footer_text_left a:nth-of-type(3) {
         padding-left: 10px;
         margin-right: 10px;
