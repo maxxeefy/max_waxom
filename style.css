@@ -56,8 +56,7 @@
 .header {
     background: url(img/photo.jpg) no-repeat 0 0;
     padding-top: 40px;
-    padding-bottom: 342px;
-    position: relative;
+    padding-bottom: 42px;
 }
 
 .header-nav {
@@ -200,9 +199,7 @@
 }
 
 .slider-circle {
-    position: absolute;
-    left: 920px;
-    bottom: 42px;
+    margin: 221px 0 0px 909px;
 }
 
 .slider-circle svg {
@@ -1203,8 +1200,7 @@ input[type="checkbox"]:checked~.menu {
     }
 
     .slider-circle {
-        left: 40%;
-        bottom: 15px;
+        margin: 221px 0 0 40%;
     }
 
     .services_catalog {
@@ -1302,8 +1298,7 @@ input[type="checkbox"]:checked~.menu {
     
     .product {
         width: 370px;
-        margin-right: 0px;
-        margin-bottom: 30px;
+        margin: 0 auto 30px auto;
     }
 
     .waxom_project_text {
@@ -1352,7 +1347,8 @@ input[type="checkbox"]:checked~.menu {
     
     video {
         width: 100%;
-        top: -175px;
+        height: auto;
+        top: 90px;
         left: 0;
         z-index: 1;
     }
@@ -1384,12 +1380,101 @@ input[type="checkbox"]:checked~.menu {
         margin: 0 auto;
     }
     
-    .waxom_mobile li {
-        padding-left: 50px;
-        font-family: 'montserrat-light', 'Arial', sans-serif;
-        color: #8c8c8c;
-        font-size: 16px;
-        line-height: 32px;
-        background: url(img/list_mark.png) no-repeat 0 5px;
+    .waxom_statistics {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .waxom_stat {
+        margin: 30px auto;
+    }
+
+    .waxom_posts {
+        padding: 30px 0;
+    }
+    
+    .waxom_posts_text {
+        text-align: center;
+    }
+    
+    .waxom_posts_text h3 {
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    .waxom_posts_text p {
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    .waxom_posts_catalog {
+        flex-wrap: wrap;
+    }
+    
+    .waxom_posts_post {
+        margin: 20px auto 30px auto;
+    }
+    
+    .waxom_logos {
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    
+    .waxom_logos a {
+        margin: 20px auto;
+    }
+
+    .waxom_logos img {
+        width: 140px;
+        height: auto;
+    }
+
+    .waxom_community {
+        padding: 30px 0;
+        flex-wrap: wrap;
+    }
+    
+    .waxom_community_discr {
+        margin: 20px auto;
+    }
+    
+    .waxom_community_posts {
+        margin: 20px auto;
+    }
+      
+    .waxom_community_twitter {
+        margin: 20px auto;
+    }
+            
+    .waxom_community_widget_catalog {
+        margin: 20px auto;
+    }
+
+    .footer {
+        padding: 20px 0;
+        background: #090909;
+    }
+    
+    .footer_text {
+        flex-direction: column;
+        margin: 0px auto;
+    }
+        
+    .footer_text_left a:nth-of-type(1),
+    .footer_text_left a:nth-of-type(2) {
+        padding: 0 10px;
+    }
+    
+    .footer_text_left a:nth-of-type(3) {
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+
+    .footer_text_left {
+        margin: 10px auto 20px auto;
+    }
+
+    .footer_text_right {
+        margin: 20px auto;
     }
 }
